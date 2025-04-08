@@ -1,0 +1,1 @@
+The "youtube_super_lite.exe" file is located in the "release" folder. You just need to download it and use it. Alternatively, you can use the "youtube_super_lite.py" file and PyInstaller to create an executable file with the following command: pyinstaller --onefile --noconsole youtube_super_lite.py
