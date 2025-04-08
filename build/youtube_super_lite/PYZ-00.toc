@@ -1,4 +1,4 @@
-('D:\\web\\build\\youtube_super_lite\\PYZ-00.pyz',
+('D:\\Youtube_lite\\build\\youtube_super_lite\\PYZ-00.pyz',
  [('PyQt5',
    'C:\\Users\\nguye\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\PyQt5\\__init__.py',
    'PYMODULE'),

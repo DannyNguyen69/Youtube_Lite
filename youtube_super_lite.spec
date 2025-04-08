@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['D:\\web\\icon\\images.ico'],
+    icon=['D:\\Youtube_lite\\icon\\images.ico'],
 )

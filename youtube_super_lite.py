@@ -2,7 +2,6 @@ import sys
 import webview
 
 def on_closed():
-    """Hàm này đảm bảo ứng dụng thoát hoàn toàn khi đóng cửa sổ"""
     sys.exit(0)
 
 if __name__ == "__main__":
@@ -13,10 +12,11 @@ if __name__ == "__main__":
         width=800,
         height=600,
         resizable=True,  # Có thể thay đổi kích thước cửa sổ
-        frameless=False,  # Giữ khung cửa sổ
-        on_top=False  # Không buộc cửa sổ luôn ở trên cùng
+        frameless=False, # Giữ khung cửa sổ
+        on_top=False,    # Không buộc cửa sổ luôn ở trên cùng
+        storage_path="./webview_data"  # Lưu cookie
     )
-    # Gắn hàm xử lý khi đóng cửa sổ
-    window.closed = on_closed
-    # Khởi động ứng dụng
+    # Khỏi động
     webview.start()
+    # Hàm xử lý khi đóng cửa sổ
+    window.closed = on_closed
