@@ -15,4 +15,4 @@ if __name__ == "__main__":
         on_top=False
     )
     window.closed = on_closed
-    webview.start(private_mode=False) 
+    webview.start(private_mode=False)  
