@@ -5,18 +5,14 @@ def on_closed():
     sys.exit(0)
 
 if __name__ == "__main__":
-    # Tạo cửa sổ trình duyệt với YouTube mobile
     window = webview.create_window(
         title="YouTube Lite",
         url="https://m.youtube.com",
         width=800,
         height=600,
-        resizable=True,  # Có thể thay đổi kích thước cửa sổ
-        frameless=False, # Giữ khung cửa sổ
-        on_top=False,    # Không buộc cửa sổ luôn ở trên cùng
-        storage_path="./webview_data"  # Lưu cookie
+        resizable=True,
+        frameless=False,
+        on_top=False
     )
-    # Khỏi động
-    webview.start()
-    # Hàm xử lý khi đóng cửa sổ
     window.closed = on_closed
+    webview.start(private_mode=False) 
